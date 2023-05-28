@@ -1,0 +1,72 @@
+body{
+    background-color: #232946;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin: 1rem;
+}
+
+.clock--wrapper{
+    display: grid;
+    place-items: center;
+    gap: 2 rem;
+    color: white;
+}
+
+.clockface{
+    filter: drop-shadow(2px 10px 10px #121629);
+}
+
+.ring--seconds{
+    fill: #121629;
+    stroke:#eebbc3;
+    stroke-width: 5;
+    stroke-dasharray: .1 .9;
+    stroke-dashoffset: .05;
+}
+.ring--hours{
+    fill: transparent;
+    stroke: #b8c1ec;
+    stroke-width: 10 ;
+    stroke-dasharray: 0.05 .95;
+    stroke-dashoffset: 0.025;
+}
+
+.ring--center{
+    fill: #eebbc3;
+    stroke: white;
+    stroke-width: 2.5;
+}
+
+.hand{
+    stroke: #eebbc3;
+    stroke-linecap: round;
+}
+.hand--hour{
+    transform: rotate(45deg);
+    stroke: white;
+    stroke-width: 5;
+}
+.hand--minute{
+    transform: rotate(93deg);
+    stroke: #b8c1ec;
+    stroke-width: 5;
+}
+.date{
+    fill: white;
+    font-size: 1.5rem;
+}
+.am-pm{
+    fill: #eebbc3;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
